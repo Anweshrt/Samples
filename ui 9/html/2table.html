@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>HTML table Page</title>
+	</head>
+	<body>
+		
+		<!--two types of elements or tags or node 
+		block elements:tags which are occupied in a new line , these elements occupied total line of the screen.
+		ex: h1 to h6, div, table, pre, p , ul, ol, dl, li, tr, address, hr,
+		inline elements:tags which are occupied side by side. these elements occupied content  space only
+		ex: span , img, a, b, i, em,td, del,
+		
+		properties of a table:
+		width="500" or "100%"
+		border="1"
+		height="300"
+		cellpadding="10", distance b/w cell text and cell border.
+		cellspacing="10" distance b/w cell two cells.
+		bgcolor="red" background color
+		align="center" or "left" or "right"
+		colspan="3", mergin 3 cells,
+		if you want to merge n cells, first remove n-1 cells and add colspan="n" in the first tag.
+		-->
+		<table width="600" border="1" cellpadding="10" cellspacing="10" align="center">
+			<tr bgcolor="red" align="center">
+				<td rowspan="3"><font color="white" size="6">Sno</font></td>
+				<td>Name</td>
+				<td>Marks</td>
+			</tr>
+			<tr align="center">
+				
+				<td>Amith</td>
+				<td>900</td>
+			</tr>
+			<tr align="center">
+				
+				<td>Suresh</td>
+				<td>990</td>
+			</tr>
+			<tr align="center">
+				<td colspan="3">3</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

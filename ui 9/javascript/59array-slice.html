@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function data()
+		{
+		//var name=document.getElementById("a").value;
+		//unshift is using to insert  values into array at first position..
+		var arr1=new Array("sai","kumar","srinu","test");
+		var arr2=new Array("sai","kumar","srinu","test");
+		var arr3=arr1.concat(arr2);
+		document.write("values from array3 : "+arr3+"<br>");//index, last index-1
+		document.write("slice from array3 : "+arr3.slice(2,6)+"<br>");//index, last index-1
+		
+		}
+		</script>
+	</head>
+	<body>
+		
+		<input type="submit" value="slice" onclick="data()">
+		
+	</body>
+</html> 

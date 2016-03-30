@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script>
+		
+			function disp()
+			{
+			var data=prompt("enter number for multipilcation");
+			/*
+			12 * 1 = 12
+			12 * 2 = 24
+			
+			*/
+			var result=confirm("do you want results");//ok-> true,cancel->false
+				if(result==true)
+				{
+					var i=1;
+					while(i<=20)
+					{
+					document.write(data+" * "+i+" = "+data*i+"<br>");
+					i++;
+					}
+				
+				}
+				else{
+					alert("you entered cancel button, please try again");
+				}
+			}
+			disp();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html> 

@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		var i=1;
+			function cal()
+			{
+					if(i<50)
+					{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginLeft=i*10+'px';
+					}
+					else{
+					i=1;
+					}
+					i++;
+					
+			}
+			setInterval("cal()",50);
+		</script>
+	</head>
+	<body>
+		<div id="data" style="width:200px;height:200px;background:red;"></div>
+	</body>
+</html> 

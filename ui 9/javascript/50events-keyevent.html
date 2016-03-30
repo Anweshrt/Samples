@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+			function data()
+			{
+				var text=document.getElementById("a").value;
+				if(text.length<=30)
+				{
+				document.getElementById("count").innerHTML=text.length;
+				}
+				else{
+				document.getElementById("count").innerHTML="overflow";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- onkeydown, onkeypress,onkeyup-->
+		<textarea id="a" rows="6" cols="30" onkeydown="data()"></textarea><span id="count"></span>
+	</body>
+</html> 

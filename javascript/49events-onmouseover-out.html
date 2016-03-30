@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+			function data(val)
+			{
+				if(val=='a')
+				{
+				document.getElementById("div1").style.background='green';
+				}
+				else{
+				document.getElementById("div1").style.background='blue';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div style="width:200px;height:200px;background:red;" onmouseover="data('a')" onmouseout="data('b')" id="div1">
+		</div>
+		
+	</body>
+</html> 

@@ -1,0 +1,42 @@
+*{margin:0px;padding:0px;}
+			.main{width:1000px;height:auto;background:#FFFFF2;margin:0px auto;}
+			.head{width:1000px;height:100px;}
+			.head .logo{width:200px;height:100px;}
+			.menu{width:1000px;height:40px;background:#006CD9;}
+			.slider{width:1000px;height:300px;background:#00D9A3;}
+			.slider img{width:1000px;height:300px;}
+			.content{width:1000px;height:220px;background:#F0F0E1;}
+			.footer{width:1000px;height:70px;background:#686859;text-align:center;}
+			.footer a{color:#CECEBF;text-decoration:none;position:relative;top:10px;margin-left:10px;}
+			.footer a:hover{color:#ffffff;}
+			.footer p{text-align:center;color:#ffffff;margin-top:20px;}
+			.menu .nav li{float:left;width:197px;height:40px;background:#A3D900;line-height:40px;margin-left:3px;text-align:center;}
+			.menu .nav li a{color:white;text-decoration:none;}
+			.menu .nav li:hover{background:#FF0000;}
+			
+			/* submenu creation  */
+			.menu .nav .sub{position:relative;z-index:1;visibility:hidden;}
+			.menu .nav li:hover .sub{visibility:visible;}
+			.sub li{border-bottom:2px solid white;}
+			.nav .sub .sub2{visibility:hidden;}
+			.nav .sub li:hover .sub2{visibility:visible;position:relative;left:194px;top:-40px;}
+			.sub2 li{border-left:2px solid white;}
+			.slider h2{background:#ffffff;position:relative;top:-61px;height:60px;opacity:0.5;color:red;text-align:center;font-size:30px;} 
+			.content .left{width:300px;height:220px;background:#F0F0E1;float:left;}
+			.content .right{width:700px;height:220px;background:#F0F0E1;float:left;}
+			.left .nav{list-style:none;}
+			.left .nav li{height:40px;background:url(img/bg.png);background-size:100% 100%;margin-bottom:3px;line-height:40px;}
+			.left .nav li a{color:white;text-decoration:none;padding-left:20px;}
+			.left .nav li:hover{border-top-right-radius:50px;border-bottom-left-radius:50px;font-size:20px;text-align:center;}
+			
+			
+			.right img{margin-left:10px;margin-top:10px;float:left;}
+			.right h2{float:left;margin-left:20px;margin-top:20px;font-size:30px;color:#006CD9;}
+			.right p{float:left;width:450px;margin-left:20px;margin-top:10px;text-align:justify;}
+			.content2{width:1000px;height:300px;}
+			.content2 .box{width:320px;height:290px;background:#DFDFD0;float:left;margin-left:10px;border-bottom:10px solid #A3D900;}
+			.box img{width:180px;height:170px;margin-left:70px;}
+			.box p{text-align:justify;margin:10px;height:110px;overflow:hidden;}
+			
+			.left input{width:200px;height:30px;border:1px solid #79796A;}
+			.left form{margin-top:15px;}

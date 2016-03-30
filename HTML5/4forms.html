@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<link href="style.css" rel="stylesheet">
+		<script>
+		
+		</script>
+		<style>
+			fieldset{
+			width:500px;height:700px;margin:0px auto;
+			}
+			legend{
+			background:#006CD9;
+			color:white;
+			padding:5px 10px;
+			}
+			input,select{width:200px;height:30px;}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend> Register</legend>
+		<form>
+			<table>
+				<tr>
+					<td><label for="name1">Name</label></td>
+					<td><input type="text" id="name1" value="" placeholder="enter name" name="name"required pattern="[a-z]{5}" title="enter 5 characters only"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" value="" placeholder="enter email" name="email" required ></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" value="" placeholder="enter password" name="pwd" required pattern=".{5,}" title="enter minimum 5 characters"></td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td><input type="tel" value="" placeholder="enter mobile" name="mobile" required pattern="[0-9]{10}" title="enter 10 numeric numbers only"></td>
+				</tr>
+				<tr>
+					<td>Range</td>
+					<td><input type="range" value="10" min="1" max="50" ></td>
+				</tr>
+				<tr>
+					<td>Color</td>
+					<td><input type="color" value="red" ></td>
+				</tr>
+				<tr>
+					<td>Website</td>
+					<td><input type="url" value="" name="website" ></td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td><input type="date" value="" name="date" ></td>
+				</tr>
+				<tr>
+					<td>Month</td>
+					<td><input type="month" value="" name="date" ></td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td><input type="month" value="" name="week" ></td>
+				</tr>
+				<tr>
+					<td>search</td>
+					<td><input type="search" value="" name="search" ></td>
+				</tr>
+				<tr>
+					<td>Number</td>
+					<td><input type="number" value="2" min="0" max="30" name="search" step="3"></td>
+				</tr>
+				<tr>
+					<td>Cook</td>
+					<td>
+						<select>
+							<option>Cook</option>
+								<optgroup label="snaks">
+									<option>kurkure</option>
+									<option>Mungdal</option>
+									<option>Peanuts</option>
+									<option>Pista</option>
+							
+								</optgroup>
+								<option>Fast Food</option>
+								<option>dry Food</option>
+						</select>
+					
+					</td>
+				</tr>
+				<tr>
+					<td>Search</td>
+					<td>
+						<input list="data" name="names">
+						<datalist id="data">
+							<option>Sri</option>
+							<option>Sai</option>
+							<option>Kumar</option>
+							<option>paresh</option>
+							<option>tanmai</option>
+							<option>Qutub</option>
+						</datalist>
+					</td>
+				</tr>
+				
+				
+				<tr>
+					<td></td>
+					<td><button value="submit">tytyty</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="image" src="img/bg.png" value="search" style="width:200px;height:40px;"></td>
+				</tr>
+				
+			</table>
+		</form>
+		</fieldset>
+	</body>
+	
+</html>

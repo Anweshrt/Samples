@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<script>
+		
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					
+					$(".para").prevAll().css({"background":"red","float":"left"});
+					$(".para").prevAll().animate({width:"200px",height:"200px",margin:"100px"},2000);
+					$(".para").prevAll().animate({borderRadius:"200px"},2000);
+				});
+				
+			});
+		</script>
+		
+	</head>
+	<body>
+	<input type="submit" value="submit" id="btn">
+ 	<div class="main">
+		<div id="div1">
+			<p>This is paragraph - 1</p>
+			<p>This is paragraph - 2</p>
+			<p>This is paragraph - 3</p>
+			<h2>This is head tag - 1</h2>
+			<p>This is paragraph - 4</p>
+			<p>This is paragraph - 5</p>
+		</div>
+		
+		<div id="div2">
+			<p>This is paragraph - 1</p>
+			<p>This is paragraph - 2</p>
+			<p class="para">This is paragraph - 3</p>
+			<h2>This is head tag - 1</h2>
+			<h2 class="head">This is head tag - 1</h2>
+			<p>This is paragraph - 4</p>
+			<p>This is paragraph - 5</p>
+		</div>
+		
+	</div>	
+	
+	</body>
+</html>

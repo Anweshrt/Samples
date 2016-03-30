@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+		//createPattern(img,"repeat|no-repeat|repeat-x|repeat-y");
+			function disp(val)
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			ctx.beginPath();
+			ctx.moveTo(50,100);
+			ctx.lineTo(50,200);
+			ctx.stroke();
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+		
+		<input type="submit" value="createLine" onclick="disp()">
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

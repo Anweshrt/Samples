@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function data()
+		{
+		var name=document.getElementById("a").value;
+		//unshift is using to insert  values into array at first position..
+		var arr=new Array("sai","kumar","srinu","test");
+		document.write("Before adding into array : "+arr.length+"<br>");
+		document.write("before insert array : "+arr+"<br>");
+		arr.unshift(name);
+		//arr.pop();
+		document.write("after insert array length : "+arr.length+"<br>");
+		document.write("after insert array : "+arr);
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id='a'>
+		<input type="submit" value="shift" onclick="data()">
+		
+	</body>
+</html> 

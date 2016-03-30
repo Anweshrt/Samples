@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function data()
+		{
+			var name=document.getElementById("a").value;
+			try{
+			if(name.length<=4)
+			{
+			throw "enter min 5 characters";
+			}
+			else if(name.length>=10)
+			{
+			throw "enter max 10 characters";
+			}
+			else{
+			throw "strong data";
+			}
+			}
+			catch(e)
+			{
+			document.getElementById("error").innerHTML=e;
+			}
+			
+		}
+		
+		</script>
+	</head>
+	<body>
+		<input type="text" id="a"><span id="error" style="color:red;"></span>
+		<br>
+		<input type="submit" value="submit" onclick="data()">
+		
+	</body>
+</html> 

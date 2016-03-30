@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+			function data(val)
+			{
+				if(val=='AP State')
+				{
+				document.getElementById("disp").innerHTML='Press Release – AP should have best public housing model: CM 08.09.2015 ... “The State is richly endowed with natural and human resources with competitive ...';
+				}
+				else if(val=='UP State')
+				{
+				document.getElementById("disp").innerHTML='Uttar Pradesh is a state in northern India. Its city of Agra is home to the iconic Taj Mahal monument, a colossal, domed, white-marble mausoleum honoring the wife of Mughal ruler Shah Jahan. Named Mumtaz Mahal, she died in childbirth in 1631. Nearby are the 20m-high, red-brick walls of Agra Fort, a Mughal fortress and palace dating to the 16th and 17th centuries.';
+				}
+				else if(val=='TS State')
+				{
+				document.getElementById("disp").innerHTML='TS is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. To the southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas. Hampi, once the medieval Vijayanagara empire’s capital, contains ruins of Hindu temples, elephant stables and a stone chariot.';
+				}
+				else if(val=='KA State')
+				{
+				document.getElementById("disp").innerHTML='Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. To the southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas. Hampi, once the medieval Vijayanagara empire’s capital, contains ruins of Hindu temples, elephant stables and a stone chariot.';
+				}
+				
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+	<select onchange="data(this.value)">
+		<option>Select State</option>
+		<option>AP State</option>
+		<option>UP State</option>
+		<option>TS State</option>
+		<option>KA State</option>
+	</select>
+	<div id="disp" style="width:300px;height:300px;border:2px solid #323232;">
+	
+	</div>
+	
+	</body>
+</html> 

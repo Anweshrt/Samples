@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<link href="style.css" rel="stylesheet">
+		<script>
+			var i=1;
+			function disp()
+			{
+			if(i<=100)
+			{
+			document.getElementById("data").value=i;
+			document.getElementById("count").innerHTML=i+'%';
+			}
+			else{
+			document.getElementById("count").innerHTML='successfully completed';
+			}
+			i++;
+			}
+			setInterval('disp()',100);
+		</script>
+		
+	</head>
+	<body>
+		<meter value="40" min="0" max="100">rggtg</meter>
+		<progress value="1" min="1" max="68" id="data">gtgth</progress>
+		<span id="count"></span>
+	</body>
+	
+</html>

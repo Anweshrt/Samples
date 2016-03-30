@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+			function disp()
+			{
+				var text=document.getElementById("data").value;
+				if(text.length<=30)
+				{
+				document.getElementById("count").innerHTML=text.length;
+				}
+				else{
+				document.getElementById("count").innerHTML='overflow';
+				
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+	<!--onkeydown onkeypress onkeyup -->
+	<textarea rows="7" cols="30" id="data" onkeydown="disp()"></textarea>
+	<span id="count"></span>
+	
+	</body>
+</html> 

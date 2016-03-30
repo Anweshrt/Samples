@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		var i=0;
+			function cal()
+			{
+					if(i<=10 && i>=0)
+					{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginLeft=i*10+'px';
+					}
+					else if(i<=20 && i>=10)
+					{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginTop=i*10+'px';
+					}
+					else if(i<=30 && i>=20)
+					{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginLeft=i*10+'px';
+					}
+					else if(i<=40 && i>=30)
+					{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginTop=i*10+'px';
+					}
+					else{
+					document.getElementById("data").style.background='green';
+					document.getElementById("data").style.marginTop=0+'px';
+					document.getElementById("data").style.marginLeft=0+'px';
+					i=0;
+					}
+					i++;
+					
+			}
+			setInterval("cal()",50);
+		</script>
+	</head>
+	<body>
+		<div id="data" style="width:200px;height:200px;background:red;"></div>
+	</body>
+</html> 

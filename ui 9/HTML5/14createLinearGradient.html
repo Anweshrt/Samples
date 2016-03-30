@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		<script>
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			var gradient=ctx.createLinearGradient(0,0,180,180);//x0,y0,x1,y1
+			gradient.addColorStop(0,"red");
+			gradient.addColorStop(0.3,"green");
+			gradient.addColorStop(0.5,"blue");
+			gradient.addColorStop(0.7,"red");
+			gradient.addColorStop(0.9,"white");
+			gradient.addColorStop(1,"gray");
+			ctx.fillStyle=gradient;
+			ctx.fillRect(50,50,150,150);
+			
+		</script>
+	</body>
+</html>

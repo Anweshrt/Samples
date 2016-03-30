@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+		//createPattern(img,"repeat|no-repeat|repeat-x|repeat-y");
+			function disp(val)
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			var img=document.getElementById("image");
+			var pattern=ctx.createPattern(img,val);
+			ctx.fillStyle=pattern;
+			ctx.fillRect(0,0,400,300);
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+		<img src="pattern2.png" id="image">
+		<input type="submit" value="submit" onclick="disp('repeat')">
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

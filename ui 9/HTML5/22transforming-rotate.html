@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+		//to increase or decrease the units of canvas tag.
+			function disp()
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			
+			ctx.fillStyle="red";
+			ctx.fillRect(500,300,30,30);
+			ctx.rotate(90);
+			ctx.fillStyle="green";
+			ctx.fillRect(300,200,30,30);
+			
+			}
+			//setInterval("disp()",20);
+		</script>
+	</head>
+	<body>
+	
+		
+		<input type="submit" value="Submit" onclick="disp()">
+		
+		<canvas id="canvas" width="1000" height="600" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

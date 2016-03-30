@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<style>
+			.main{width:1000px;height:300px;background:red;margin:0px auto;}
+		</style>
+		<script>
+		var i=0;
+			function disp()
+			{
+				var arr=new Array("img/slider1.jpg","img/slider2.jpg","img/slider3.jpg","img/slider4.jpg","img/slider5.jpg","img/slider6.jpg","img/slider7.jpg");
+				document.image.src=arr[i];
+				i++;
+				if(i>=arr.length)
+				{
+				i=0;
+				}
+			}
+			setInterval("disp()",1500);//1500ms=1.5sec.
+		</script>
+	</head>
+	<body>
+			<div class="main">
+				<img src="img/slider1.jpg" name="image">
+			</div>
+	
+	</body>
+</html> 

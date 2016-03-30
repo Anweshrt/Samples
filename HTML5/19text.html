@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+			function disp(val)
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			ctx.font="40px verdana";
+			var gradient=ctx.createLinearGradient(0,0,400,0);//x0,y0,x1,y1
+			gradient.addColorStop(0,"red");
+			gradient.addColorStop(0.3,"green");
+			gradient.addColorStop(0.5,"blue");
+			gradient.addColorStop(0.7,"red");
+			gradient.addColorStop(0.9,"white");
+			gradient.addColorStop(1,"red");
+				if(val=='f')
+				{
+			ctx.fillStyle=gradient;
+			ctx.fillText("Welcome To My Site",50,100,300);
+			}
+			else{
+			ctx.strokeStyle=gradient;
+			ctx.strokeText("Welcome To My Site",50,100,300);
+			
+			}
+			
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+		
+		<input type="submit" value="FillText" onclick="disp('f')">
+		<input type="submit" value="StrokeText" onclick="disp('s')">
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

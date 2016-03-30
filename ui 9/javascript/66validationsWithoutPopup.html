@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<style>
+			.inp{
+			width:250px;
+			height:30px;
+			border:1px solid gray;
+			}
+			.inp2{
+			width:250px;
+			height:150px;
+			border:1px solid gray;
+			}
+			table{
+			width:500px;
+			margin:0px auto;
+			border:3px solid #323232;
+			padding:10px;
+			border-radius:10px;
+			}
+		</style>
+		<script src="validationsInHtml.js"></script>
+	</head>
+	<body>
+	
+		<form method="get" action="index.html">
+		
+			<table>
+				<tr><td colspan="2" id="error" style="color:red;font-size:20px;"></td></tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" id="name" name="name" class="inp"></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" id="email" name="email" class="inp"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" id="pwd" name="pwd" class="inp"></td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td><input type="text" id="mobile" name="mobile" class="inp"></td>
+				</tr>
+				<tr>
+					<td>Message</td>
+					<td><textarea id="msg" name="msg" class="inp2"></textarea></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+					Male <input type="radio" id="genderm" name="gender" value="male">
+					Female <input type="radio" id="genderf" name="gender" value="female">
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies</td>
+					<td>
+					Cricket <input type="checkbox" id="crik" name="crik" value="cricket">
+					Carroms <input type="checkbox" id="car" name="car" value="carroms">
+					</td>
+				</tr>
+				<tr>
+					<td>State</td>
+					<td>
+						<select id="state" name="state" class="inp">
+							<option>Select State</option>
+							<option>AP State</option>
+							<option>UP State</option>
+							<option>GJ State</option>
+							<option>TS State</option>
+							<option>KA State</option>
+						</select>	
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="submit" class="inp" onclick="return validate()">	
+					</td>
+				</tr>
+				
+			</table>
+		</form>
+	</body>
+</html> 

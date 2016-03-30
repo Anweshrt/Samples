@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function disp()
+		{
+		var name=document.getElementById("name").value;
+		var date=document.getElementById("date").value;
+			var data1="Dear YYYY ";
+		var data2='This is to inform you that, You are be appointed as Software Engineer, ';
+		var data3='in Srashtaa Software, Your date of joining is XXXX';
+		document.write(data1.replace("YYYY",name)+"<br>"+data2+"<br>"+data3.replace("XXXX",date));
+		document.write("<br><br><input type='submit' value='print' onclick='prnt()'>")
+		}
+		function prnt()
+		{
+		window.print();
+		}
+		</script>
+	</head>
+	<body>
+		Name :<input type='text' id="name">
+		Date :<input type="date" id="date">
+		<input type="submit" value="submit" onclick="disp()">
+	</body>
+</html> 

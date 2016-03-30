@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+			function disp(val)
+			{
+				if(val=='g')
+				{
+				document.getElementById("div1").style.background='green';
+				}
+				else{
+				document.getElementById("div1").style.background='blue';
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="div1" style="width:300px;height:300px;background:red;" onmouseover="disp('g')" onmouseout="disp('b')"></div>
+		<marquee direction="up" width="200" height="400" onmouseover="this.stop()" onmouseout="this.start()">
+			Uttar Pradesh is a state in northern India. Its city of Agra is home to the iconic Taj Mahal monument, a colossal, domed, white-marble mausoleum honoring the wife of Mughal ruler Shah Jahan. Named Mumtaz Mahal, she died in childbirth in 1631. Nearby are the 20m-high, red-brick walls of Agra Fort, a Mughal fortress and palace dating to the 16th and 17th centuries.
+		</marquee>
+	</body>
+</html> 

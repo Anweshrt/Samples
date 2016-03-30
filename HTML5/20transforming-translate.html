@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+			function disp()
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			
+			ctx.fillStyle="red";
+			ctx.fillRect(20,20,150,150);
+			ctx.translate(40,40);
+			ctx.fillStyle="green";
+			ctx.fillRect(20,20,150,150);
+			
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+		
+		<input type="submit" value="Submit" onclick="disp()">
+		
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

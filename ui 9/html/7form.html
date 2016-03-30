@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>HTML table Page</title>
+	</head>
+	<body>
+		<!-- form: form is using to transfer the data from current page to the action page.
+		properties:
+			method="post or get"
+			post: using to transfer large amount of data and secure data.
+			get: using to transfer small amount and unsecure data.
+			 
+			action="destination page":
+		
+		-->
+		<form method="get" action="5image.html">
+			<table>
+				<tr><td width="250">Name :</td>
+					<td> <input type="text" id="name" name="name" value=""></td>
+				</tr>
+				<tr><td>Email :</td>
+					<td> <input type="text" id="email" name="email" value=""></td>
+				</tr>
+				<tr><td>Password :</td> <td><input type="password" id="pwd" name="pwd"></td></tr>
+				<tr>
+					<td>Mobile :</td>
+					<td><input type="text" id="mobile" name="mobile" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td>Message :</td>
+					<td><textarea id="msg" name="msg" id="msg" name="msg" rows="6" cols="40"></textarea></td>
+				</tr>
+				<tr>
+					<td>Gender :</td>
+					<td>Male<input type="radio" id="gender1" name="gender" value="male" checked>
+					Female<input type="radio" id="gender2" name="gender" value="female">
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies :</td>
+					<td>Cricket <input type="checkbox" id="crik" name="crik" value="cricket">
+					Carroms<input type="checkbox" id="car" name="carom" value="carroms">
+					</td>
+				</tr>
+				<tr>
+					<td>State :</td>
+					<td>
+						<select id="state" name="state">
+							<option>Select State</option>
+							<option>AP State</option>
+							<option>UP State</option>
+							<option selected>MP State</option>
+							<option>GJ State</option>
+						</select>	
+					</td>
+				</tr>
+					<td>
+				<tr>
+					<td>Upload :</td>
+						<input type="file" id="file" name="file">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="reset"> :</td>
+					<td>
+						<input type="submit" value="submit">
+					</td>
+				</tr>
+				
+				
+				
+			</table>
+		</form>
+	</body>
+</html>

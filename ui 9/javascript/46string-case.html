@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function disp(val)
+		{
+			var name=document.getElementById("name").value;
+			if(val=='l')
+			{
+			document.getElementById("case").value=name.toLowerCase();
+			}
+			else
+			{
+			document.getElementById("case").value=name.toUpperCase();
+			}
+		}
+		
+		</script>
+	</head>
+	<body>
+		Name :<input type='text' id="name">
+		<input type="text" id="case">
+		<input type="submit" value="lowercase" onclick="disp('l')">
+		<input type="submit" value="uppercase" onclick="disp('u')">
+	</body>
+</html> 

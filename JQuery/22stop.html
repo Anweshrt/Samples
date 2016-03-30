@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					$("#div").slideDown(2000);//2000ms
+				});
+				$("input").click(function(){
+					$("#div").stop();
+				});
+			});
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	<input type="submit" value="stop">
+		<div style="width:200px;height:40px;background:#0086B3;color:white;text-align:center;line-height:40px;font-size:20px;" id="btn">Submit
+		</div>
+		<div style="width:500px;height:400px;background:#A3D900;display:none;" id="div">
+		
+		</div>
+	</body>
+</html>

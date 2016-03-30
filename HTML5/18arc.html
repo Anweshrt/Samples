@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+		//arc(x,y,r,sA,eA,true/false)true->counterclockwise, false->clockwise direction
+			function disp(val)
+			{
+			var can=document.getElementById("canvas");
+			var ctx=can.getContext("2d");
+			ctx.beginPath();
+			ctx.arc(150,150,100,0,Math.PI*2,false);
+			ctx.closePath();
+			ctx.fillStyle="green";
+			ctx.fill();
+			}
+			
+		</script>
+	</head>
+	<body>
+	
+		
+		<input type="submit" value="Circle" onclick="disp()">
+		<canvas id="canvas" width="400" height="300" style="border:2px solid red;"></canvas>
+		
+	</body>
+</html>

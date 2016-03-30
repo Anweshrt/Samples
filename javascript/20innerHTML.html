@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+			function disp()
+			{
+		
+			var val1=document.getElementById("a").value;
+			var val2=document.getElementById("b").value;
+			//alert(name);
+			var val3=parseInt(val1)+parseInt(val2);
+			//document.write(val3);
+			document.getElementById("c").value=val3;
+			document.getElementById("data").innerHTML=val3;
+			document.getElementById("data2").innerHTML=val3;
+			}
+			
+		</script>
+	</head>
+	<body>
+		  <input type="text" id="a" name="">
+		  <input type="text" id="b" name="">
+		  <input type="text" id="c" name="" value="">
+		<input type='submit' value="sum" onclick="disp()">
+		<div id="data"></div>
+		<h1 id="data2"></h1>
+	</body>
+</html> 

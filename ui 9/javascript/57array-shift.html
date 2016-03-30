@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function data()
+		{
+		//var name=document.getElementById("a").value;
+		//shift is using to delete  values from array at first position..
+		var arr=new Array("sai","kumar","srinu","test");
+		document.write("Before adding into array : "+arr.length+"<br>");
+		
+		arr.shift();
+		arr.pop();
+		document.write("after deletin array length : "+arr.length+"<br>");
+		document.write("after deleting array : "+arr);
+		}
+		</script>
+	</head>
+	<body>
+		
+		<input type="submit" value="shift" onclick="data()">
+		
+	</body>
+</html> 

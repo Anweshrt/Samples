@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<style>
+			*{margin:0px;padding:0px;}
+			.main{width:1000px;height:auto;background:#FFFFF2;margin:0px auto;}
+			.head{width:1000px;height:100px;}
+			.head .logo{width:200px;height:100px;}
+			.menu{width:1000px;height:40px;background:#006CD9;}
+			.slider{width:1000px;height:300px;background:#00D9A3;}
+			.content{width:1000px;height:220px;background:#F0F0E1;}
+			.footer{width:1000px;height:70px;background:#686859;text-align:center;}
+			.footer a{color:#CECEBF;text-decoration:none;position:relative;top:10px;margin-left:10px;}
+			.footer a:hover{color:#ffffff;}
+			.footer p{text-align:center;color:#ffffff;margin-top:20px;}
+			.menu .nav li{float:left;width:197px;height:40px;background:#A3D900;line-height:40px;margin-left:3px;text-align:center;}
+			.menu .nav li a{color:white;text-decoration:none;}
+			.menu .nav li:hover{background:#FF0000;}
+			
+			/* submenu creation  */
+			.menu .nav .sub{position:relative;z-index:1;visibility:hidden;}
+			.menu .nav li:hover .sub{visibility:visible;}
+			.sub li{border-bottom:2px solid white;}
+			.nav .sub .sub2{visibility:hidden;}
+			.nav .sub li:hover .sub2{visibility:visible;position:relative;left:194px;top:-40px;}
+			.sub2 li{border-left:2px solid white;}
+			.slider h2{background:#ffffff;position:relative;top:-61px;height:60px;opacity:0.5;color:red;text-align:center;font-size:30px;} 
+			.content .left{width:300px;height:220px;background:#F0F0E1;float:left;}
+			.content .right{width:700px;height:220px;background:#F0F0E1;float:left;}
+			.left .nav{list-style:none;}
+			.left .nav li{height:40px;background:url(img/bg.png);background-size:100% 100%;margin-bottom:3px;line-height:40px;}
+			.left .nav li a{color:white;text-decoration:none;padding-left:20px;}
+			.left .nav li:hover{border-top-right-radius:50px;border-bottom-left-radius:50px;font-size:20px;text-align:center;}
+			
+			
+			.right img{margin-left:10px;margin-top:10px;float:left;}
+			.right h2{float:left;margin-left:20px;margin-top:20px;font-size:30px;color:#006CD9;}
+			.right p{float:left;width:450px;margin-left:20px;margin-top:10px;text-align:justify;}
+			.content2{width:1000px;height:300px;}
+			.content2 .box{width:320px;height:290px;background:#DFDFD0;float:left;margin-left:10px;border-bottom:10px solid #A3D900;}
+			.box img{width:180px;height:170px;margin-left:70px;}
+			.box p{text-align:justify;margin:10px;height:110px;overflow:hidden;}
+		</style>
+		<script>
+		
+		var i=0;
+			function disp()
+			{
+				var arr=new Array("img/slider1.jpg","img/slider2.jpg","img/slider3.jpg","img/slider4.jpg","img/slider5.jpg","img/slider6.jpg","img/slider7.jpg");
+				document.image.src=arr[i];
+				if(i==0)
+				{
+				document.getElementById("data").innerHTML='Web Development in short period';
+				}
+				else if(i==1)
+				{
+				document.getElementById("data").innerHTML='Java Development with in dead line';
+				}
+				else if(i==2)
+				{
+				document.getElementById("data").innerHTML='PHP Application';
+				}
+				else if(i==3)
+				{
+				document.getElementById("data").innerHTML='online Shopping';
+				}
+				else if(i==4)
+				{
+				document.getElementById("data").innerHTML='Online Marketing Shopping';
+				}
+				else if(i==5)
+				{
+				document.getElementById("data").innerHTML='Web Media Solutions';
+				}
+				else
+				{
+				document.getElementById("data").innerHTML='ontShopping';
+				}
+				
+				
+				i++;
+				if(i>=arr.length)
+				{
+				i=0;
+				}
+			}
+			setInterval("disp()",1500);//1500ms=1.5sec.
+		</script>
+		
+	</head>
+	
+	<body>
+		<div class="main">
+			<div class="head">
+				<img src="img/logo2.jpg" class="logo">
+			</div>
+			<div class="menu">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a>
+						<ul class="sub">
+							<li><a href="#">IT-Services</a></li>
+							<li><a href="#">NON IT-Services</a>
+								<ul class="sub2">
+									<li><a href="#">Marketing-Services</a></li>
+									<li><a href="#">Sales IT-Services</a></li>
+									<li><a href="#">HR-Services</a></li>
+									<li><a href="#">Back-Services</a></li>
+								</ul>
+							</li>
+							<li><a href="#">BPO-Services</a></li>
+							<li><a href="#">KPO-Services</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="slider">
+				<img src="img/slider1.jpg" name="image">
+				<h2 id="data">Srashtaa Software</h2>
+			</div>
+			<div class="content">
+				<div class="left">
+						<ul class="nav">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+				</div>
+				<div class="right">
+					<img src="img/1.jpg">
+					<h2>About Us</h2>
+					<p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+</p>
+				</div>
+			</div>
+			<div class="content2">
+				<div class="box">
+					<img src="img/1.jpg">
+					<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look. 
+</p>
+				</div>
+				<div class="box">
+					<img src="img/3.jpg">
+					<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look. 
+</p>
+				</div>
+				<div class="box">
+					<img src="img/1.jpg">
+					<p>On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look. 
+</p>
+				</div>
+			</div>
+			<div class="footer">
+				<a href="home.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="career.html">Career</a>
+				<a href="contact.html">Contact Us</a>
+				<p>&COPY;Srashtaa Software Pvt. Ltd.</p>
+			</div>
+		
+		</div>
+		
+	</body>
+
+</html> 
